@@ -1,0 +1,1311 @@
+@font-face {
+    font-family: Wide;
+    src: url("./fonts/Sequel\ 100\ Wide\ 95.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Rozanova;
+    src: url("./fonts/RozanovaHUM-Demo-SemiBold.otf");
+    font-weight: normal;
+}
+
+html{
+    background-color: #191919;
+}
+
+ol{
+    padding: 0px;
+}
+
+
+/*--------------Estilos tipográficos--------------*/
+
+h1.negro {
+    font-family: "Wide";
+    font-size: 35px;
+    color: black;
+}
+
+h2.negro {
+    font-family: "Wide";
+    font-size: 20px;
+    color: black;
+}
+
+h2.blanco {
+    font-family: "Wide";
+    font-size: 20px;
+    color: white;
+}
+
+h3.negro {
+    font-family:"Plus Jakarta Sans", sans-serif, "Rozanova", Arial;
+    font-size: 22px;
+    color: black;
+}
+
+h3.blanco {
+    font-family:"Plus Jakarta Sans", sans-serif, "Rozanova", Arial;
+    font-size: 22px;
+    color: white;
+}
+
+h4.negro {
+    font-family:"Plus Jakarta Sans", sans-serif, "Rozanova", Arial;
+    font-size: 20px;
+    color: black;
+}
+
+h4.blanco {
+    font-family:"Plus Jakarta Sans", sans-serif, "Rozanova", Arial;
+    font-size: 20px;
+    color: white;
+}
+
+h5.negro {
+    font-family: "Plus Jakarta Sans", sans-serif, "Rozanova", Arial;
+    font-size: 18px;
+    color: black;
+    }
+
+h5.blanco {
+    font-family: "Plus Jakarta Sans", sans-serif, "Rozanova", Arial;
+    font-size: 18px;
+    color: white;
+}
+
+p.negro {
+    font-family: "Plus Jakarta Sans", sans-serif, "Rozanova", Arial;
+    font-size: 16px;
+    color: black;
+}
+
+p.blanco {
+    font-family: "Plus Jakarta Sans", sans-serif, "Rozanova", Arial;
+    font-size: 16px;
+    color: white;
+}
+
+/*--------------Separadores fondo chueco--------------*/
+
+.separador {
+    width: 0;
+    height: 0;
+    border-right: 99vw solid #191919;
+    border-bottom: 80px solid #fff;
+}
+
+.separador2 {
+    width: 0;
+    height: 0;
+    border-left: 99vw solid #fff;
+    border-bottom: 80px solid #191919;
+    border-top: 10px solid #fff;
+}
+
+
+/*--------------Sección cabezera--------------*/
+
+.cabecera {
+    background-color: #191919;
+    height: 750px;
+    margin-left: 80px;
+    margin-right: 80px;
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+}
+
+
+.imagencabecera {
+    width: 950px;
+    grid-column: 4;
+    grid-row: 1;
+}
+
+#principal {
+    grid-column: 1/6;
+    grid-row: 3;
+    line-height: 57px;
+}
+
+#subtitulo {
+    margin-top: 15px;
+    grid-column: 1/6;
+    grid-row: 5;
+}
+
+.contenidopopup {
+    margin-top: 40px;
+    grid-column: 1/6;
+    grid-row: 7;
+}
+
+.boton {
+    font-family: "Plus Jakarta Sans", sans-serif, "Rozanova", Arial;
+    font-size: 18px;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #fae414;
+    border-radius: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+
+  .boton:hover {
+    border: 4px solid;
+    border-color: #fae414;
+    color: #fae414;
+    background: #191919;
+  }
+
+  #boton {
+    font-family: "Plus Jakarta Sans", sans-serif, "Rozanova", Arial;
+    font-size: 18px;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #fae414;
+    border-radius: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+
+  #boton:hover {
+    border: 4px solid;
+    border-color: #fae414;
+    color: #fae414;
+    background: #191919;
+  }
+
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+  }
+
+  .oculto {
+    display: none !important;
+  }
+
+
+  /*--------------Popup formulario--------------*/
+  
+  .popup {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 80px;
+    padding: 65px;
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+    transition: all 5s ease-in-out;
+    background-color: #191919;
+    background-image: url(./img/TextuBlanco.png);
+    display: grid;
+    grid-template-columns: 5.7% 5.7% 5.7% 5.7% 5.7% 5.7% 5.7% 5.7% 5.7% 5.7% 5.7% 5.7%;
+    grid-column-gap: 32px;
+  }
+  
+  .popup h2 {
+    grid-column: 1/13;
+    font-family: "Wide";
+    font-size: 22px;
+    color: black;
+  }
+
+  .popup .cerrar {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .popup .cerrar:hover {
+    color: #fae414;
+  }
+
+  .popup h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .formcampo1 input {
+    margin-top: 28px;
+    grid-column: 1/6;
+    width: 516px;
+    height: 54px;
+    border: none;
+    border-radius: 8px;
+    padding: 28px;
+    font-size: 18px;
+    font-family: "Plus Jakarta Sans", sans-serif, "Rozanova", Arial;
+  }
+
+  .formcampo1 input:focus {
+    resize: none;
+    outline: none;
+    border: 4px solid #fae414;
+  }
+
+  .formcampo2 input {
+    margin-top: 28px;
+    grid-column: 1/6;
+    width: 516px;
+    height: 54px;
+    border: none;
+    border-radius: 8px;
+    padding: 28px;
+    font-size: 18px;
+    font-family: "Plus Jakarta Sans", sans-serif, "Rozanova", Arial;
+  }
+
+  .formcampo2 input:focus {
+    resize: none;
+    outline: none;
+    border: 4px solid #fae414;
+  }
+
+  .formcampo1 {
+    grid-column: 1/6;
+    margin-top: 80px;
+  }
+
+  .formcampo2 {
+    grid-column: 7/13;
+    margin-top: 80px;
+  }
+
+  .zonadeopciones {
+    margin-top: 80px;
+    grid-column: 1/13;
+  }
+
+  .opciones {
+    width: 100%;
+    margin-top: 28px;
+    display: flex;
+    flex-direction: row;
+}
+
+.cardopcion {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 16px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.cardopcion img{
+    height: 120px;
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+
+.cardopcion h3{
+    margin: 0px;
+    padding: 16px;
+}
+
+.cardopcion input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 12px;
+    height: 28px;
+    width: 28px;
+    background-color: white;
+    border: 4px solid gray;
+    border-radius: 50%;
+}
+
+.cardopcion:hover{
+    resize: none;
+    border: 4px solid #fae414;
+}
+
+.cardopcion:hover input ~ .checkmark{
+    resize: none;
+    border: 4px solid #fae414;
+}
+
+.cardopcion input:checked ~ .checkmark {
+    resize: none;
+    border: 4px solid #fae414;
+}
+
+.checkmark::after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.cardopcion input:checked ~ .checkmark:after {
+ display: block;
+}
+
+.cardopcion .checkmark:after{
+    top: 0px;
+    right: 0px;
+    margin: 7px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #fae414;
+}
+
+.caja2 {
+    padding-top: 80px;
+}
+ 
+/*--------------Feedback--------------*/
+
+.textoseccionfeedback{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    grid-column: 1/6;
+}
+
+#textodefeedback{
+    margin: 0;
+    padding-top: 40px;
+}
+
+#fotodefeedback {
+    width: 480px;
+    grid-column: 7/13;
+}
+
+
+/*--------------¿Cómo...?--------------*/
+
+.seccion2 {
+    background-color: #ffff;
+}
+
+.como {
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-top: 160px;
+padding-bottom: 160px;
+display: grid;
+grid-template-columns: 6% 6% 6% 6% 6% 6% 6% 6% 6% 6% 6% 6%;
+grid-column-gap: 32px;
+}
+
+
+.risa {
+   width: 610px;
+   grid-column: 1/6;
+}
+
+#risas1 {
+    display:none;
+}
+
+.textoseccioncomo {
+    grid-column: 7/13;
+}
+
+#textocomo{
+    margin: 0;
+    padding-top: 80px;
+}
+
+
+.margenes{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+
+.espaciobullets {
+padding-bottom: 160px;
+    background-color: #ffff;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 40px;
+    justify-content: center;
+    justify-items: center;
+
+
+}
+
+.locacion{
+    text-align: center;
+    grid-column: 1;
+    justify-content: center;
+    justify-self: center;
+}
+
+
+.dia{
+    text-align: center;
+    grid-column: 2;
+    justify-content: center;
+    justify-self: center;
+}
+
+.hora{
+    text-align: center;
+    grid-column: 3;
+    justify-content: center;
+    justify-self: center;
+}
+
+#titulodonde{
+    margin-top: 40px;
+}
+
+#titulocuando{
+    margin-top: 40px;
+}
+
+#titulohora{
+    margin-top: 40px;
+}
+
+#textodonde{
+    margin-top: 20px;
+}
+
+#textocuando{
+    margin-top: 20px;
+}
+
+#textohora{
+    margin-top: 20px;
+}
+
+
+
+
+/*--------------Sección ¿Qué tengo que hacer?--------------*/
+
+.seccionquetengo{
+    background-color: #191919;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    margin-left: 80px;
+    margin-right: 80px;
+display: grid;
+grid-template-columns: 6% 6% 6% 6% 6% 6% 6% 6% 6% 6% 6% 6%;
+grid-column-gap: 32px;
+}
+
+.milistadepasos{
+    font-family:"Plus Jakarta Sans", sans-serif, "Rozanova", Arial;
+    font-size: 20px;
+    color: white;
+    grid-column: 1/6;
+}
+
+.milistadepasos li{
+    text-indent: -110px;
+    margin-top: 80px;
+    margin-left: 110px;
+    display: inline-block;
+    grid-column: 1;
+    counter-increment: milistadepasos-counter;
+}
+
+.milistadepasos li ::before{
+    content: counter(milistadepasos-counter) ".";
+    color: black;
+    font-family: "Wide";
+    font-size: 22px;
+    height: 30px;
+    margin: 10px;
+    background: #fae414;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-inline: 10px;
+    margin-inline-end: 50px;
+}
+
+#resaltado{
+    color: black;
+    background-color: #fae414;
+    padding: 10px;
+}
+
+#tituloquehacer {
+grid-column: 1/6;
+}
+
+#subasta {
+    grid-column: 7/12;
+}
+
+
+/*--------------Sección ¿En qué programas puedo estar?--------------*/
+
+.programas{
+    background-color: #ffff;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+.tituloysubtitulodeprogramas {
+    display: grid;
+    grid-template-columns: 6% 6% 6% 6% 6% 6% 6% 6% 6% 6% 6% 6%;
+    grid-column-gap: 32px;
+}
+
+#tituloprogramas{
+    line-height: 50px;
+grid-column: 1/6;
+}
+
+#textoprogramas {
+   grid-column: 7/12;
+}
+
+.cards {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.cardprograma {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25%;
+    margin: 16px;
+    padding: 20px;
+    background-color: #191919;
+}
+
+.cardprograma img{
+    width: 100%;
+    margin-bottom: 38px;
+}
+
+.cardprograma h4{
+    margin-top: 0;
+    margin-bottom: 46px;
+}
+
+.cardprograma h3{
+    margin-top: 0;
+    margin-bottom: 46px;
+}
+
+
+/*--------------Sección ¿Te lo vas a perder?--------------*/
+
+.telovasaperder {
+    background-color: #191919;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 160px;
+padding-bottom: 160px;
+display: grid;
+grid-template-columns: 6% 6% 6% 6% 6% 6% 6% 6% 6% 6% 6% 6%;
+grid-column-gap: 32px;
+}
+
+
+.beso {
+   width: 610px;
+   grid-column: 1/6;
+}
+
+.textoseccionperder {
+    grid-column: 7/13;
+}
+
+#textoperder{
+    margin: 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/*--------------Footer--------------*/
+
+.footer{
+    background-color: white;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    align-items: center;
+    align-content: center;
+}
+
+.zonadeiconos {
+    grid-column: 1;
+    justify-self: start;
+    align-self: center;
+}
+
+.zonadelogo {
+    grid-column: 3;
+    justify-self: end;
+    align-self: center;
+}
+
+.iconodefooter{
+    height: 36px;
+    width: 36px;
+    margin-right: 24px;
+}
+
+#logodefooter {
+    width: 107px;
+    margin-right: 0;
+}
+
+/*--------------Media Queryes--------------*/
+
+@media (max-width: 600px) {
+
+    body {
+        width: 100%;
+        display: block;
+    }
+
+    .separador {
+        border-bottom: 40px solid #fff;
+    }
+    
+    .separador2 {
+        border-bottom: 40px solid #191919;
+    }
+
+/*--------------Estilos tipográficos--------------*/
+h1.negro {
+    font-size: 20px;
+}
+
+h2.negro {
+    font-size: 16px;
+}
+
+h2.blanco {
+    font-size: 16px;
+}
+
+h3.negro {
+    font-size: 18px;
+}
+
+h3.blanco {
+    font-size: 18px;
+}
+
+h4.negro {
+    font-size: 14px;
+}
+
+h4.blanco {
+    font-size: 14px;
+}
+
+h5.negro {
+    font-size: 14px;
+    }
+
+h5.blanco {
+    font-size: 14px;
+}
+
+p.negro {
+    font-size: 12px;
+}
+
+p.blanco {
+    font-size: 12px;
+}
+
+/*--------------Sección cabezera--------------*/
+    .cabecera {
+        height: 100%;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .imagencabecera{
+        width: 99%;
+        object-fit: cover;
+    }
+    #logocabecera{
+        width: 100px;
+    }
+
+    #principal {
+        margin-top: 0;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    #subtitulo {
+        margin-top: 12px;
+        margin-bottom: 0px;
+        font-size: 18px;
+        text-align: center;  
+    }
+
+    .boton {
+        align-self: center;
+        font-size: 16px;
+        margin-top: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 32px;
+        padding-right: 32px;
+        border-radius: 20px;
+      }
+    
+      .boton:checked {
+        border: 3px solid;
+        border-color: #fae414;
+        color: #fae414;
+        background: #191919;
+      }
+
+      /*--------------Popup formulario--------------*/
+      .popup {
+        height: 100%;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        padding: 16px;
+        display: block;
+       overflow-y: scroll !important;
+      }
+      
+      .popup h2 {
+        margin-top: 60px;
+        font-size: 16px;
+        line-height: 35px;
+      }
+    
+      .popup .cerrar {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        transition: all 200ms;
+        font-size: 35px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #fff;
+      }
+    
+      .popup h4 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+    
+      .formcampo1 input {
+        margin-top: 16px;
+        width: 100%;
+        height: 38px;
+        border: none;
+        border-radius: 8px;
+        padding: 12px;
+        font-size: 14px;
+      }
+    
+      .formcampo1 input:focus {
+        resize: none;
+        outline: none;
+        border: 3px solid #fae414;
+      }
+    
+      .formcampo2 input {
+        margin-top: 16px;
+        width: 100%;
+        height: 38px;
+        border: none;
+        border-radius: 8px;
+        padding: 12px;
+        font-size: 14px;
+      }
+    
+      .formcampo2 input:focus {
+        resize: none;
+        outline: none;
+        border: 4px solid #fae414;
+      }
+    
+      .formcampo1 {
+        margin-top: 48px;
+      }
+    
+      .formcampo2 {
+        margin-top: 40px;
+      }
+    
+      .zonadeopciones {
+        margin-top: 40px;
+      }
+    
+      .opciones {
+        width: 100%;
+        margin-top: 16px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-around ;
+    }
+    
+    .cardopcion {
+        display: flex;
+        flex-direction: column;
+        width: 130px;
+        margin: 8px;
+        background-color: #fff;
+        text-align: center;
+        border-radius: 20px;
+        cursor: pointer;
+        position: relative;
+    }
+    
+    .cardopcion img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+    
+    
+    .cardopcion h3{
+        margin: 0px;
+        padding: 14px;
+    }
+    
+    .cardopcion input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+    
+    .checkmark {
+        margin: 12px;
+        height: 25px;
+        width: 25px;
+        border: 2px solid gray;
+    }
+
+    .cardopcion input:checked {
+        resize: none;
+        border: 2px solid #fae414;
+    }
+    
+    .cardopcion input:checked ~ .checkmark {
+        resize: none;
+        border: 2px solid #fae414;
+    }
+    
+    .checkmark::after{
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    
+    .cardopcion input:checked ~ .checkmark:after {
+     display: block;
+    }
+    
+    .cardopcion .checkmark:after{
+        top: -2px;
+        right: -2px;
+        margin: 7px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .caja2 {
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+
+    #botonenviar {
+        margin: 0;
+        width: 100%;
+    }
+    
+
+      /*--------------Feedback--------------*/
+     #popup2{
+        overflow-y: scroll !important;
+        width: 100%;
+     }
+
+      .textoseccionfeedback{
+        margin-top: 40px;
+        margin-bottom: 56px;
+        text-align: center;
+    }
+    
+    #textodefeedback{
+        padding-top: 56px;
+        margin: 0;
+        text-align: left;
+    }
+    
+    #fotodefeedback {
+        width: 100%;
+    }
+
+    .caja3 {
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+
+    #listo {
+        text-align: center;
+        margin: 0;
+        width: 80%;
+    }
+
+      /*--------------¿Cómo...?--------------*/
+
+      .como {
+        margin-left: 16px;
+        margin-right: 16px;
+        padding-top: 80px;
+        padding-bottom: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    
+    
+    .risa {
+        align-self: center;
+        margin-top: 56px;
+        margin-bottom: 80px;
+       width: 260px;
+    }
+
+    #risas {
+        display: none;
+    }
+
+    #risas1 {
+        display: flex;
+    }
+    
+    .textoseccioncomo {
+        margin-top: 0px;
+
+    }
+    
+    #textocomo{
+        margin: 0;
+        padding-top: 32px;
+    }
+    
+    
+    .margenes{
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    
+    
+    .espaciobullets {
+    display: block;
+    padding-bottom: 80px;
+    }
+
+    .espaciobullets img {
+        height: 70px;
+        width: 70px;
+    }
+    
+    .locacion{
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 32px;
+    }
+    
+    
+    .dia{
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 32px;
+    }
+    
+    .hora{
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 32px;
+    }
+    
+    #titulodonde{
+        margin: 0px;
+        }
+    
+    #titulocuando{
+        margin: 0px;
+    }
+    
+    #titulohora{
+        margin: 0px;
+    }
+    
+    #textodonde{
+        margin-top: 16px;
+    
+    }
+    
+    #textocuando{
+        margin-top: 16px;
+    }
+    
+    #textohora{
+        margin-top: 16px;
+    }
+
+    .textolocacion{
+        display: flex;
+        flex-direction: column;
+        margin-left: 16px;
+    }
+
+    .textodia{
+        display: flex;
+        flex-direction: column;
+        margin-left: 16px;
+    }
+
+    .textohora{
+        display: flex;
+        flex-direction: column;
+        margin-left: 16px;
+    }
+    
+    
+      /*--------------Sección ¿Qué tengo que hacer?--------------*/
+      .seccionquetengo{
+        padding-top: 80px;
+        padding-bottom: 80px;
+        margin-left: 16px;
+        margin-right: 16px;
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .milistadepasos{
+        font-size: 14px;
+    }
+    
+    .milistadepasos li{
+        text-indent: -55px;
+        margin-top: 40px;
+        margin-left: 55px;
+        display: inline-block;
+        grid-column: 1;
+        counter-increment: milistadepasos-counter;
+    }
+    
+    .milistadepasos li ::before{
+        font-size: 16px;
+        height: 25px;
+        margin: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-inline: 5px;
+        margin-inline-end: 20px;
+    }
+    
+    #resaltado{
+        padding: 3px;
+    }
+    
+    #subasta {
+        align-self: center;
+        width: 260px;
+        margin-top: 56px;
+    }
+    
+
+      /*--------------Sección ¿En qué programas puedo estar?--------------*/
+      .programas{
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 56px;
+        padding-bottom: 80px;
+    }
+    
+    .tituloysubtitulodeprogramas {
+display: block;
+    }
+    
+    #tituloprogramas{
+        line-height: 40px;
+    }
+    
+    #textoprogramas {
+        margin-top: 32px;
+        margin-bottom: 80px;
+    }
+    
+    .cards {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    .cardprograma {
+        display: flex;
+flex-direction: row;
+        width: 99%;
+        margin: 0;
+        margin-bottom: 32px;
+        padding: 0px;
+        background-color: #fff;
+    }
+    
+    .cardprograma img{
+        object-fit: cover;
+        width: 50%;
+        margin-bottom: 0;
+    }
+    
+    .cardprograma h4{
+        color: black;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    .cardprograma h3{
+        color: black;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .textodecard {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 16px;
+    }
+
+    
+
+      /*--------------Sección ¿Te lo vas a perder?--------------*/
+      .telovasaperder {
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column-reverse;
+    }
+    
+    
+    .beso {
+        align-self: center;
+       margin-top: 0px;
+       width: 230px;
+    }
+    
+    #textoperder{
+        margin: 0;
+        padding-top: 32px;
+        padding-bottom: 0px;
+    }
+
+    .caja3{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #abrir1 {
+        align-self: center;
+        font-size: 16px;
+        margin-top: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 32px;
+        padding-right: 32px;
+        border-radius: 20px;
+      }
+
+      #abrir1:checked {
+        border: 3px solid;
+        border-color: #fae414;
+        color: #fae414;
+        background: #191919;
+      }
+
+      /*--------------Footer--------------*/
+
+      
+.footer{
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.zonadeiconos {
+    margin-top: 4px;
+    width: 100%;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.iconodefooter{
+    margin-right: 0px;
+    height: 36px;
+    width: 36px;
+}
+}

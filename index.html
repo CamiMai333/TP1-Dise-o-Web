@@ -1,0 +1,279 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="language" content="es">
+        <meta name="description" content="">
+        <meta name="theme-color" content="#fae414ff">
+        <title>Esto es Blender escucha ofertas</title>
+        <link rel="icon" href="./img/LogoIcono.png" alt="image"/>
+        <link rel="stylesheet" href="/estilo.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+
+         <!--Fuente Plus Jakarta Sans-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    </head>
+
+
+    <body>
+       <!--Cabecera-->
+        <header>
+            <div class="cabecera">
+            <img id="logocabecera" src="./img/LogoSinFondo.png" alt="Logo de BLENDER" width="170px"/>
+            <img class="imagencabecera" src="./img/CabeceraDesktop.png" alt="image">
+            <h1 id="principal" class="negro"> <span style="background-color: #fff; padding: 10px;">ESTO ES BLENDER ESCUCHA OFERTAS</span></h1>
+            <h4 id="subtitulo" class="blanco">Llená el formulario y participá para estar en un episodio de tu programa favorito de Blender. Si fueras pillo te anotarías!</h3>
+         
+                     <!--Botón 1-->
+            <div class="contenidopopup">
+                <div class="caja">
+                    <a id="abrir" class="boton" href="">¡Quiero participar!</a>
+                </div>
+                    
+                     <!--Popup con formulario-->
+                     <div id="esconder1" class="oculto">
+                <div id="popup1" class="overlay">
+                    <div class="popup">
+                        <h2><span style="background-color: #fff; padding: 10px;">ANOTATE Y SE PARTE DE BLENDER</span></h2>
+                        <a id="cruzdecerrar" class="cerrar" href="#">&times;</a>
+                            <div class="formcampo1">
+                                <h4 id="nombreyapellido" class="blanco">Nombre y apellido</h4>
+                                <input type="text" id="nombre" placeholder="¿Cómo querés que te llamemos?" required="true">
+                            </div>
+                            <div class="formcampo2">
+                                <h4 id="mail" class="blanco">Correo electrónico</h4>
+                                <input type="email" id="correo" placeholder="¿A dónde te contactamos?" required="true">
+                            </div>
+
+                            <div class="zonadeopciones">
+                                <h4 id="aqueprograma" class="blanco">¿A qué programa te gustaría ir?</h4>
+                            <div class="opciones">
+                                <label name="seleccion" class="cardopcion" value="desayuno intermitente" id="desayuno intermitente">
+                                    <input type="radio" name="programa" value="desayuno intermitente" id="programa"/>
+                                    <span class="checkmark"></span>
+                                    <img src="./img/Di.png" alt="imagen de desayuno intermitente">
+                                    <h3 class="negro">Desayuno Intermitente</h3>
+                                </label>
+                                <label name="seleccion" class="cardopcion" value="escucho ofertas" id="escucho ofertas">
+                                    <input type="radio" name="programa" value="escucho ofertas" id="programa"/>
+                                    <span class="checkmark"></span>
+                                    <img src="./img/Eo.png" alt="imagen de escucho ofertas">
+                                    <h3 class="negro">Escucho Ofertas</h3>
+                                </label>
+                                <label name="seleccion" class="cardopcion" value="dinero y amor" id="dinero y amor">
+                                    <input type="radio" name="programa" value="dinero y amor" id="programa"/>
+                                    <span class="checkmark"></span>
+                                    <img src="./img/Dya.png" alt="imagen de dinero y amor">
+                                    <h3 class="negro">Dinero y Amor</h3>
+                                </label>
+                                <label name="seleccion" class="cardopcion" value="hay algo ahí" id="hay algo ahi">
+                                    <input type="radio" name="programa" value="hay algo ahi" id="programa"/>
+                                    <span class="checkmark"></span>
+                                    <img src="./img/Haa.png" alt="imagen de hay algo ahí">
+                                    <h3 class="negro">Hay Algo Ahí</h3>
+                                </label>
+                                </div>
+                            </div>
+                            
+                         <!--Boton 2 para ir al feedback-->
+                <div class="caja2">
+                    <input id="botonenviar" class="boton" type="submit"/>
+                    <!-- <a class="boton" href="#popup2">Enviar</a>-->
+                </div>
+                        </div>
+
+                </div>
+            </div>
+
+                     <!--Pop up 2 Feedback-->
+                     <section id="esconder2" class="oculto">
+                  <div id="popup2" class="overlay">
+                    <div class="popup">
+                        <a id="cruzdecerrar1" class="cerrar" href="#">&times;</a>
+                        <div class="textoseccionfeedback">
+                        <h2><span style="background-color: #fff; padding: 10px;">GRACIAS POR PARTICIPAR</span></h2>
+                        <h4 id="textodefeedback" class="blanco">Gracias, <span id="nombreplaceholder"></span> por inscribirte en nuestro humilde sorteo. Pronto te llegarán noticias al correo 
+                            <span id="emailplaceholder"></span>
+                            ¡Te deseamos mucha suerte!</h4>
+                        </div>
+                            <img id="fotodefeedback" src="./img/ImagenFeedback.png" alt="image">
+                            <div class="caja3">
+                               <a  id="listo" class="boton" href="">Listo</a>
+                            </div>
+</div>
+</div>
+</section>
+
+            </div>
+        </header>
+
+       <!--Sección ¿Cómo...?-->
+       <div class="separador">
+       </div>
+        <section class="seccion2">
+            <div class="como">
+                <img id="risas" class="risa" src="./img/Risa.png" alt="image">
+                <img id="risas1" class="risa" src="./img/Risa1.png" alt="image">
+                <div class="textoseccioncomo">
+                <h2 id="titulocomo" class="blanco"><span style="background-color: black; padding: 10px;">¿CÓMO...?</span></h2>
+                <h4 id="textocomo" class="negro">¿Siempre quisiste ser parte del equipo de Blender?¿Soñás con ver a nuestro presidente Guille Aquino en vivo?¿Te morís de ganas de hablar con nuestros ciudadanos ilustres? Ahora puede ser realidad.</h4> 
+        </div>          
+            </div>
+
+                <!--Bullets-->
+                <div class="margenes">
+                <div class="espaciobullets">
+            <div class="locacion">
+                <img class="iconolocacion" src="./img/IconoLocacion.png" alt="image">
+                <div class="textolocacion">
+                <h3 id="titulodonde" class="negro">¿Dónde?</h3>
+                <h5 id="textodonde" class="negro">En los estudios Blender.Cnel. Niceto Vega 5248, C1414 CABA.</h4>
+            </div>
+        </div>
+
+            
+            <div class="dia">
+                <img class="iconocuando" src="./img/IconoDia.png" alt="image">
+                <div class="textodia">
+                <h3 id="titulocuando" class="negro">¿Cuándo?</h3>
+                <h5 id="textocuando" class="negro">Si ganás vas a aparecer en el programa del 10 de junio.</h4>
+            </div>
+        </div>
+
+            <div class="hora">
+                <img class="iconohora" src="./img/IconoHora.png" alt="image">
+                <div class="textohora">
+                <h3 id="titulohora" class="negro">¿A qué hora?</h3>
+                <h5 id="textohora" id="textohora" class="negro">¡Al horario del programa que elijas!</h4>
+            </div>
+        </div>
+        </div>
+        </div>
+        </section>
+
+
+        <!--Sección ¿Qué tengo que hacer?-->
+        <div class="separador2"></div>
+        <section>
+            <div class="seccionquetengo">
+        <h2 id="tituloquehacer" class="negro"><span style="background-color: #fff; padding: 10px;">¿QUÉ TENGO QUE HACER?</span></h2>
+        
+            <div class="milistadepasos">
+                <ol>
+                    <li> <a>Ingresá tu nombre y mail.</a></li>
+                    <li><a>Decinos en que programa de Blender te gustaría participar.</a></li>
+                    <li><a>Revisá tu mail.</a></li>
+                    <li><a>Mirá nuestros episodios y redes para enterarte cuando anunciemos al ganador.</a></li>
+                    <li id="resaltado"><a>Disfrutá de Esto es Blender.</a></li>
+                </ol>
+            </div>
+            <img id="Subasta" src="./img/Subasta.png" alt="image">
+
+        </div>
+        </section>
+
+        <!--Sección ¿En qué programas puedo estar?-->
+        <div class="separador">
+        </div>
+        <section>
+            <div class="programas">
+            <div class="tituloysubtitulodeprogramas">
+                    <h2 id="tituloprogramas" class="blanco"><span style="background-color: black; padding: 10px;">¿EN QUÉ PROGRAMAS PUEDO ESTAR?</span></h2>
+                    <h4 id="textoprogramas" class="negro">(Avisale a tu abuela que vea YouTube)</h4>
+                </div>
+            <div class="cards">
+<div class="cardprograma">
+    <img src="./img/Di.png" alt="imagen de desayuno intermitente">
+    <div class="textodecard">
+    <h3 class="blanco">Desayuno Intermitente</h3>
+    <h4 class="blanco">Con Fede Simonetti, Elisa Sánchez, Mauro Szeta y Manu Jove</h4>
+    <h4 class="blanco">De 08:00 a 10:00 hs</h4>
+</div>
+</div>
+<div class="cardprograma">
+    <img src="./img/Eo.png" alt="imagen de escucho ofertas">
+    <div class="textodecard">
+    <h3 class="blanco">Escucho Ofertas</h3>
+    <h4 class="blanco">Con Guille Aquino, Galia Moldavsky, Juanita Groisman, Juan Ruocco</h4>
+    <h4 class="blanco">De 10:00 a 13:00 hs</h4>
+</div>
+</div>
+<div class="cardprograma">
+    <img src="./img/Dya.png" alt="imagen de dinero y amor">
+    <div class="textodecard">
+    <h3 class="blanco">Dinero y Amor</h3>
+    <h4 class="blanco">Con Marcos Aramburu, Tomás Quintín Palma, Evitta Luna, Andy Chango y Alex Kohen</h4>
+    <h4 class="blanco">De 19:00 a 21:00 hs</h4>
+</div>
+</div>
+<div class="cardprograma">
+    <img src="./img/Haa.png" alt="imagen de hay algo ahí">
+    <div class="textodecard">
+    <h3 class="blanco">Hay Algo Ahí</h3>
+    <h4 class="blanco">Con Tomás Rebord, Juan Ruffo e Iván Schargrodsky</h4>
+    <h4 class="blanco">De 21:00 a 23:00 hs</h4>
+</div>
+</div>
+            </div>
+            </div>
+        </section>
+
+        <div class="separador2"></div>
+
+          <!--Sección ¿Te lo vas a perder?-->
+
+          <section id="noperder">
+            <div class="telovasaperder">
+                <img id="beso" class="beso" src="./img/Beso.png" alt="image">
+                <div class="textoseccionperder">
+                <h2 id="tituloperder" class="negro"><span style="background-color: white; padding: 10px;">¿TE LO VAS A PERDER?</span></h2>
+                <h4 id="textoperder" class="blanco">Es una oportunidad imperdible para los fanaticos de Esto es Blender. No sabemos que m!#$%a hacés no participando!</h4> 
+                  <!--Repetición botón 1-->
+                <div class="contenidopopup">
+                    <div class="caja3">
+                        <a id="abrir1" class="boton" href="">¡Quiero participar!</a>
+                    </div>
+                </div>
+
+            </div>    
+        
+        
+            </div>
+
+          </section>
+
+        <!--Footer-->
+        <footer>
+            <div class="footer">
+         <p class="negro">¿Te quedaste manija? Seguinos en nuestras redes</p>
+            <div class="zonadeiconos">
+                <a class="linkared" href="https://www.instagram.com/estoesblender/?hl=es">
+         <img class="iconodefooter" src="./img/IconoInsta.png" alt="image"/>
+        </a>
+        <a class="linkared" href="https://www.youtube.com/@estoesblender">
+         <img class="iconodefooter" src="./img/IconoYT.png" alt="image"/>
+        </a>
+         <a class="linkared" href="https://x.com/estoesblender?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+         <img class="iconodefooter" src="./img/IconoX.png" alt="image"/>
+        </a>
+         <a class="linkared" href="https://open.spotify.com/show/3hlCZA6aQhgJVtAGUxHVxs">
+         <img class="iconodefooter" src="./img/IconoSpoti.png" alt="image"/>
+        </a>
+         <a class="linkared" href="https://www.facebook.com/estoesblender/">
+         <img class="iconodefooter" src="./img/IconoFacebook.png" alt="image"/>
+        </a>
+        </div>
+         <div class="zonadelogo">
+         <img id="logodefooter" src="./img/LogoSinFondo.png" alt="image">
+        </div>
+        </div>
+            </div>
+        </footer>
+
+        <script src="./script.js"></script>
+
+    </body>
+</html>
